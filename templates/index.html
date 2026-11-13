@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}
+    صفحه اصلی سایت پارسا فکری
+{% endblock %}
+
+{% block head %}
+    {% comment %} تمامی تگ ها ، سی اس اس ها و کل هد {% endcomment %}
+    {% include "includes/head.html" %}
+{% endblock %}
+
+{% block header %}
+    {% comment %} هدر سایت که شامل یک سری منو است {% endcomment %}
+    {% include "includes/header.html" %}
+{% endblock %}
+
+{% block mobile_menu %}
+    {% comment %} منوی موبایل {% endcomment %}
+    {% include "includes/mobile_menu.html" %}
+{% endblock %}
+
+{% block content %}
+    {% comment %} محتوای اصلی سایت {% endcomment %}
+    {% include "includes/hero.html" %}
+
+    {% include "includes/content.html" %}
+{% endblock %}
+
+{% block footer %}
+    {% comment %} فوتر سایت {% endcomment %}
+    {% include "includes/footer.html" %}
+{% endblock %}
+
+{% block modal_hire %}
+    {% comment %} مدال فایل استخدام {% endcomment %}
+    {% include "includes/modal_hire.html" %}
+{% endblock %}
+
+{% block scripts %}
+    {% comment %} html اسکریپت های صفحه {% endcomment %}
+    {% include "includes/scripts.html" %}
+{% endblock %}
